@@ -1,0 +1,24 @@
+.contact__wrapper {
+  padding: 3rem 6rem; }
+  .contact__wrapper h1 {
+    margin: 0;
+    margin-bottom: 2rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 1.6rem;
+    letter-spacing: 1px; }
+  .contact__wrapper .comment {
+    margin-top: 2rem; }
+
+@media (min-width: 320px) and (max-width: 767px) {
+  .contact__wrapper {
+    padding: 3rem 0; }
+    .contact__wrapper h1 {
+      text-align: center;
+      margin: 0;
+      margin-bottom: 2rem; }
+    .contact__wrapper .address-wrapper {
+      text-align: center;
+      padding: 0 1.5rem; }
+    .contact__wrapper .comment {
+      padding: 0 1rem; } }

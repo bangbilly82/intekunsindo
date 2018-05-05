@@ -1,0 +1,16 @@
+.about__wrapper {
+  padding: 5rem 6rem;
+  text-align: center; }
+  .about__wrapper h1 {
+    margin: 0;
+    text-align: center;
+    margin-bottom: 3rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 1.6rem;
+    letter-spacing: 1px; }
+
+@media (min-width: 320px) and (max-width: 767px) {
+  .about__wrapper {
+    padding: 5rem 3rem;
+    text-align: center; } }

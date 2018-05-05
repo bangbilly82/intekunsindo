@@ -1,0 +1,54 @@
+@import '../../static/scss/_media-query-mixins';
+
+.blog-detail__wrapper {
+  .description {
+    padding: 0rem 15rem;
+    margin-bottom: 5rem;
+    h1,h2,h3,h4,h5,h6 {
+      margin: 2rem 0 1rem 0;
+    }
+    h3 {
+      &.title {
+        text-transform: uppercase;
+        font-weight: 700;
+        margin-top: 2rem;
+      }
+    }
+    span {
+      &.date {
+        display: block;
+        margin-bottom: 2rem;
+      }
+    }
+    p {
+      line-height: 1.6;
+      font-size: 1rem;
+      text-align: justify;
+    }
+    strong {
+      display: block;
+    }
+    img {
+      margin-bottom: 2rem;
+    }
+  }
+}
+
+@include phone {
+  .blog-detail__wrapper {
+    .description {
+      padding: 0rem;
+      margin-bottom: 3rem;
+      h3 {
+        &.title {
+          text-transform: capitalize;
+        }
+      }
+      span {
+        &.date {
+          margin-bottom: 1rem;
+        }
+      }
+    }
+  }
+}

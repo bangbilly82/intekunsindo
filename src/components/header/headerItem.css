@@ -1,0 +1,9 @@
+.header-item:last-child a {
+  margin-right: 0; }
+
+.header-item a {
+  font-family: 'Roboto', sans-serif;
+  margin-right: 30px;
+  color: #666;
+  font-weight: 700;
+  text-transform: uppercase; }

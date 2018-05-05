@@ -1,0 +1,73 @@
+@import '../../static/scss/_media-query-mixins';
+
+.blogpost__wrapper {
+  padding: 3rem 6rem;
+  h1 {
+    margin: 0;
+    margin-bottom: 3rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 1.6rem;
+    letter-spacing: 1px;
+    text-align: right;
+  }
+  .blogpost-container {
+    .blog {
+      background: #fff;
+      transition: 0.3s all;
+      margin-bottom: 2rem;
+      box-shadow: 1px 5px 5px rgba(0,0,0,0.1);
+      &:hover {
+        box-shadow: 1px 5px 5px rgba(0,0,0,0.1);
+        background: #f9f9f9;
+      }
+      .blog-detail {
+        padding: 2rem;
+        border: 1px solid #f9f9f9;
+        a {
+          text-decoration: none;
+          color: #666;
+          &:hover {
+            color: #999;
+          }
+          h4 {
+            font-size: 1.3rem;
+            margin: 0;
+            margin-bottom: 0.5rem;
+            line-height: 1.4;
+            text-transform: uppercase;
+            font-weight: 700;
+          }
+        }
+        span {
+          display: block;
+          font-size: 0.9rem;
+          margin-bottom: 2rem;
+          color: #999;
+        }
+        p {
+          margin: 0;
+          font-size: 1rem;
+        }
+      }
+    }
+  }
+}
+
+@include phone {
+  .blogpost__wrapper {
+    padding: 3rem 1rem;
+    h1 {
+      margin-bottom: 2rem;
+      text-align: center;
+    }
+    .blogpost-container {
+      .blog {
+        margin-bottom: 1rem;
+        .blog-detail {
+          padding: 1.5rem;
+        }
+      }
+    }
+  }
+}

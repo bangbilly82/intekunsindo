@@ -1,0 +1,49 @@
+@import '../../static/scss/_media-query-mixins';
+
+.headline__wrapper {
+  background-image: url('../../static/images/homepage-image.jpg');
+  background-size: cover;
+  padding: 9rem 5rem;
+  display: flex;
+  justify-content: flex-end;
+  .headline-text {
+    width: 400px;
+    color: #fff;
+    text-align: right;
+    h1 {
+      margin: 0;
+      border-bottom: 1px solid #fff;
+      margin-bottom: 2rem;
+    }
+    p {
+      margin: 0;
+      font-size: 0.9rem;
+    }
+  }
+}
+
+@include phone {
+  .headline__wrapper {
+    position: relative;
+    display: block;
+    padding: 0;
+    justify-content: flex-end;
+    .headline-text {
+      padding: 6.5rem 2rem;
+      background: rgba(0,0,0,0.5);
+      width: 100%;
+      color: #fff;
+      text-align: center;
+      h1 {
+        margin: 0;
+        padding-bottom: 2rem;
+        border-bottom: 1px solid #fff;
+        margin-bottom: 2rem;
+      }
+      p {
+        margin: 0;
+        font-size: 1.1rem;
+      }
+    }
+  }
+}

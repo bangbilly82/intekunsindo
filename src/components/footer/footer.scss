@@ -1,0 +1,37 @@
+@import '../../static/scss/_media-query-mixins';
+
+.footer__wrapper {
+  background: #000;
+  padding: 1rem 5rem;
+  .menu-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    .copyright, .contact {
+      p {
+        margin: 0;
+        color: #fff;
+        font-size: 0.9rem;
+      }
+    }
+  }
+}
+
+@include phone {
+  .footer__wrapper {
+    background: #000;
+    padding: 1rem;
+    .menu-wrapper {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      .copyright, .contact {
+        p {
+          margin: 0;
+          color: #fff;
+          font-size: 0.7rem;
+        }
+      }
+    }
+  }
+}

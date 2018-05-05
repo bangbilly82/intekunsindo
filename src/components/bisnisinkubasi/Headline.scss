@@ -1,0 +1,47 @@
+@import '../../static/scss/_media-query-mixins';
+
+.bisnisinkubasiheadline__wrapper {
+  background-image: url('../../static/images/works2.jpg');
+  background-size: cover;
+  padding: 9rem 0 3rem 0;
+  display: flex;
+  .headline-text {
+    width: 500px;
+    color: #fff;
+    h1 {
+      margin: 0;
+      margin-bottom: 2rem;
+      font-size: 4rem;
+      text-transform: uppercase;
+      padding-left: 3rem;
+    }
+    .description {
+      background: rgba(51, 149, 182, 0.8);
+      padding: 2rem 3rem;
+      p {
+        margin: 0;
+        font-size: 1.1rem;
+        line-height: 1.6;
+      }
+    }
+  }
+}
+
+@include phone {
+  .bisnisinkubasiheadline__wrapper {
+    padding: 5rem 0 0 0;
+    .headline-text {
+      width: 100%;
+      h1 {
+        font-size: 2rem;
+        padding-left: 2rem;
+      }
+      .description {
+        padding: 2rem;
+        p {
+          font-size: 1rem;
+        }
+      }
+    }
+  }
+}

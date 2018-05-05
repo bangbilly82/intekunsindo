@@ -1,0 +1,38 @@
+.headline__wrapper {
+  background-image: url("../../static/images/homepage-image.jpg");
+  background-size: cover;
+  padding: 9rem 5rem;
+  display: flex;
+  justify-content: flex-end; }
+  .headline__wrapper .headline-text {
+    width: 400px;
+    color: #fff;
+    text-align: right; }
+    .headline__wrapper .headline-text h1 {
+      margin: 0;
+      border-bottom: 1px solid #fff;
+      margin-bottom: 2rem; }
+    .headline__wrapper .headline-text p {
+      margin: 0;
+      font-size: 0.9rem; }
+
+@media (min-width: 320px) and (max-width: 767px) {
+  .headline__wrapper {
+    position: relative;
+    display: block;
+    padding: 0;
+    justify-content: flex-end; }
+    .headline__wrapper .headline-text {
+      padding: 6.5rem 2rem;
+      background: rgba(0, 0, 0, 0.5);
+      width: 100%;
+      color: #fff;
+      text-align: center; }
+      .headline__wrapper .headline-text h1 {
+        margin: 0;
+        padding-bottom: 2rem;
+        border-bottom: 1px solid #fff;
+        margin-bottom: 2rem; }
+      .headline__wrapper .headline-text p {
+        margin: 0;
+        font-size: 1.1rem; } }

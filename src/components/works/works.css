@@ -1,0 +1,65 @@
+.works__wrapper .col-md-12 {
+  padding: 0; }
+
+.works__wrapper .works-container {
+  display: flex;
+  align-items: stretch; }
+  .works__wrapper .works-container .item {
+    position: relative;
+    width: 50%;
+    transition: 1s all; }
+    .works__wrapper .works-container .item:hover .title {
+      opacity: 0; }
+    .works__wrapper .works-container .item:hover .detail {
+      opacity: 1; }
+    .works__wrapper .works-container .item img {
+      width: 100%; }
+    .works__wrapper .works-container .item .title, .works__wrapper .works-container .item .detail {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      transition: 0.5s all; }
+    .works__wrapper .works-container .item .title {
+      background: rgba(0, 0, 0, 0.4);
+      color: #fff;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      opacity: 1; }
+      .works__wrapper .works-container .item .title h3 {
+        font-size: 3.5rem; }
+    .works__wrapper .works-container .item .detail {
+      opacity: 0;
+      padding: 0 8rem;
+      background: rgba(51, 149, 182, 0.8);
+      color: #fff;
+      display: flex;
+      justify-content: center;
+      flex-direction: column; }
+      .works__wrapper .works-container .item .detail p {
+        margin: 0;
+        margin-bottom: 2rem;
+        font-size: 1.2rem; }
+      .works__wrapper .works-container .item .detail button {
+        width: 110px;
+        font-size: 0.8rem;
+        background: transparent;
+        border: 1px solid #fff;
+        color: #fff; }
+
+@media (min-width: 320px) and (max-width: 767px) {
+  .works-container {
+    flex-direction: column; }
+    .works-container .item {
+      width: 100% !important; }
+      .works-container .item .title h3 {
+        font-size: 2.5rem !important; }
+      .works-container .item .detail {
+        padding: 0 2rem !important; }
+        .works-container .item .detail p {
+          font-size: 1rem !important; }
+        .works-container .item .detail button {
+          width: auto !important;
+          font-size: 0.8rem; } }

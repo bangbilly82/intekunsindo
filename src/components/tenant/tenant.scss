@@ -1,0 +1,38 @@
+@import '../../static/scss/_media-query-mixins';
+
+.tenant-detail__wrapper {
+  .description {
+    padding: 0rem 15rem;
+    margin-bottom: 5rem;
+    h3 {
+      text-align: center;
+      text-transform: uppercase;
+      font-weight: 700;
+      margin-top: 2rem;
+      margin-bottom: 1rem;
+    }
+    p {
+      line-height: 1.6;
+      font-size: 1rem;
+      text-align: justify;
+    }
+    strong {
+      display: block;
+      margin-bottom: 0.3rem;
+    }
+  }
+}
+
+@include phone {
+  .tenant-detail__wrapper {
+    margin-top: 6rem;
+    .description {
+      padding: 0rem;
+      margin-bottom: 3rem;
+      h3 {
+        margin-top: 2rem;
+        font-size: 1.5rem;
+      }
+    }
+  }
+}

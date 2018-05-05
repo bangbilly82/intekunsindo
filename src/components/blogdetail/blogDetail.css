@@ -1,0 +1,29 @@
+.blog-detail__wrapper .description {
+  padding: 0rem 15rem;
+  margin-bottom: 5rem; }
+  .blog-detail__wrapper .description h1, .blog-detail__wrapper .description h2, .blog-detail__wrapper .description h3, .blog-detail__wrapper .description h4, .blog-detail__wrapper .description h5, .blog-detail__wrapper .description h6 {
+    margin: 2rem 0 1rem 0; }
+  .blog-detail__wrapper .description h3.title {
+    text-transform: uppercase;
+    font-weight: 700;
+    margin-top: 2rem; }
+  .blog-detail__wrapper .description span.date {
+    display: block;
+    margin-bottom: 2rem; }
+  .blog-detail__wrapper .description p {
+    line-height: 1.6;
+    font-size: 1rem;
+    text-align: justify; }
+  .blog-detail__wrapper .description strong {
+    display: block; }
+  .blog-detail__wrapper .description img {
+    margin-bottom: 2rem; }
+
+@media (min-width: 320px) and (max-width: 767px) {
+  .blog-detail__wrapper .description {
+    padding: 0rem;
+    margin-bottom: 3rem; }
+    .blog-detail__wrapper .description h3.title {
+      text-transform: capitalize; }
+    .blog-detail__wrapper .description span.date {
+      margin-bottom: 1rem; } }

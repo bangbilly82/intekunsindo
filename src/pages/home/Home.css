@@ -1,0 +1,29 @@
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Roboto', sans-serif;
+  line-height: 1; }
+
+p {
+  font-family: 'Roboto', sans-serif; }
+
+.home-intek__wrapper,
+.bengkel-intek__wrapper,
+.bisnis-intek__wrapper,
+.team-intek__wrapper,
+.blog-intek__wrapper,
+.tenant-detail__wrapper,
+.blog-detail-page__wrapper,
+.contact-page__wrapper {
+  margin-top: 8rem; }
+
+@media (min-width: 320px) and (max-width: 767px) {
+  .home-intek__wrapper,
+  .bengkel-intek__wrapper,
+  .bisnis-intek__wrapper,
+  .team-intek__wrapper,
+  .blog-intek__wrapper,
+  .tenant-detail__wrapper,
+  .blog-detail-page__wrapper,
+  .contact-page__wrapper {
+    margin-top: 3rem; }
+  body {
+    overflow-x: hidden; } }

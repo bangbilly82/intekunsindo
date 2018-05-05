@@ -1,0 +1,26 @@
+.tenant-detail__wrapper .description {
+  padding: 0rem 15rem;
+  margin-bottom: 5rem; }
+  .tenant-detail__wrapper .description h3 {
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 700;
+    margin-top: 2rem;
+    margin-bottom: 1rem; }
+  .tenant-detail__wrapper .description p {
+    line-height: 1.6;
+    font-size: 1rem;
+    text-align: justify; }
+  .tenant-detail__wrapper .description strong {
+    display: block;
+    margin-bottom: 0.3rem; }
+
+@media (min-width: 320px) and (max-width: 767px) {
+  .tenant-detail__wrapper {
+    margin-top: 6rem; }
+    .tenant-detail__wrapper .description {
+      padding: 0rem;
+      margin-bottom: 3rem; }
+      .tenant-detail__wrapper .description h3 {
+        margin-top: 2rem;
+        font-size: 1.5rem; } }
