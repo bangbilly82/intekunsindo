@@ -1,5 +1,5 @@
 .tenant-detail__wrapper .description {
-  padding: 0rem 15rem;
+  padding: 0rem 10rem;
   margin-bottom: 5rem; }
   .tenant-detail__wrapper .description h3 {
     text-align: center;
@@ -14,6 +14,11 @@
   .tenant-detail__wrapper .description strong {
     display: block;
     margin-bottom: 0.3rem; }
+
+.tenant-detail__wrapper .image-wrapper {
+  margin-bottom: 4rem; }
+  .tenant-detail__wrapper .image-wrapper .col-md-4 {
+    margin-bottom: 2rem; }
 
 @media (min-width: 320px) and (max-width: 767px) {
   .tenant-detail__wrapper {

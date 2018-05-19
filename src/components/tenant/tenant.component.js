@@ -24,6 +24,21 @@ export default class Tenant extends Component {
     }
   }
 
+  generateImageDetail() {
+    const { content } = this.props;
+    let images;
+    if (content && content.items[0].fields.image) {
+      images = content.items[0].fields.image.map((image, index) => {
+        return (
+          <div className="col-md-4" key={index}>
+            <img src={image.fields.file.url} width="100%"/>
+          </div>
+        )
+      })
+      return images;
+    }
+  }
+
   hideLoader() {
     this.props.hideLoader(false);
   }
@@ -34,6 +49,9 @@ export default class Tenant extends Component {
         <div className="row">
           <div className="col-md-12">
             {this.generateDescription()}
+            <div className="row image-wrapper">
+              {this.generateImageDetail()}
+            </div>
           </div>
         </div>
       </div>
