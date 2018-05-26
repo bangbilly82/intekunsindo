@@ -6,7 +6,6 @@ import Loader from '../../components/loader/loader.component';
 import Headline from '../../components/bengkelinovasi/Headline.component';
 import Program from '../../components/bengkelinovasi/Program.component';
 import OurWorks from '../../components/bengkelinovasi/OurWorks.component';
-import Gallery from '../../components/bengkelinovasi/Gallery.component';
 
 const mapStateToProps = (state) => {
   return {
@@ -56,7 +55,6 @@ class BengkelInovasiPage extends Component {
         <Headline />
         <Program />
         {this.generateWorks()}
-        <Gallery />
         <Loader loading={this.state.loading}/>
       </div>
     );

@@ -19,6 +19,8 @@
   margin-bottom: 4rem; }
   .tenant-detail__wrapper .image-wrapper .col-md-4 {
     margin-bottom: 2rem; }
+    .tenant-detail__wrapper .image-wrapper .col-md-4 img {
+      cursor: pointer; }
 
 @media (min-width: 320px) and (max-width: 767px) {
   .tenant-detail__wrapper {

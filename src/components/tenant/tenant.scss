@@ -25,6 +25,9 @@
     margin-bottom: 4rem;
     .col-md-4 {
       margin-bottom: 2rem;
+      img {
+        cursor: pointer;
+      }
     }
   }
 }

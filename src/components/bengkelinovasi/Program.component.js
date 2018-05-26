@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
 import Image1 from '../../static/images/works1.jpg';
 import Image2 from '../../static/images/works2.jpg';
-import Ib3 from '../../static/images/ibprogram3.jpg';
-import Ib4 from '../../static/images/ibprogram4.jpg';
-import Ib5 from '../../static/images/ibprogram5.jpg';
+import Ib3 from '../../static/images/stell.jpg';
+import Ib4 from '../../static/images/fiber.jpg';
+import Ib5 from '../../static/images/machine.jpg';
 import './Program.css';
 
 export default class Program extends Component {

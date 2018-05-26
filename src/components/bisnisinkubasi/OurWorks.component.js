@@ -13,7 +13,7 @@ export default class OurWorks extends Component {
       tenant = content.map((ten, index) => {
         return (
           <a href={"/tenant/" + ten.fields.slug} className="item" key={index}>
-            <img src={Image1}/>
+            { (ten.fields.featuredImage !== undefined) ? <img src={ten.fields.featuredImage.fields.file.url} width="100%"/> : <img src={Image1}/> }
             <div className="title">
               <h3>{ten.fields.tenantName}</h3>
             </div>
