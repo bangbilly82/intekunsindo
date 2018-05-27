@@ -13,11 +13,13 @@
     padding: 0; }
   .gallery__wrapper .gallery-container {
     display: flex;
-    justify-content: center; }
+    flex-wrap: wrap; }
     .gallery__wrapper .gallery-container .item {
       position: relative;
       margin: 20px 10px;
-      transition: 1s all; }
+      transition: 1s all;
+      width: 30%;
+      text-decoration: none; }
       .gallery__wrapper .gallery-container .item img {
         width: 100%; }
       .gallery__wrapper .gallery-container .item .title {

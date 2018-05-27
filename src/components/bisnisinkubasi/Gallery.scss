@@ -17,11 +17,14 @@
   }
   .gallery-container {
     display: flex;
-    justify-content: center;
+    // justify-content: center;
+    flex-wrap: wrap;
     .item {
       position: relative;
       margin: 20px 10px;
       transition: 1s all;
+      width: 30%;
+      text-decoration: none;
       img {
         width: 100%;
       }
@@ -36,6 +39,37 @@
       }
     }
   }
+  // .gallery-container {
+  //   display: flex;
+  //   flex-wrap: wrap;
+  //   width: 100%;
+  //   .item {
+  //     position: relative;
+  //     border: 1px solid #eee;
+  //     transition: 1s all;
+  //     width: 30%;
+  //     &:hover {
+  //       .title {
+  //         opacity: 1;
+  //       }
+  //     }
+  //     img {
+  //       width: 100%;
+  //     }
+  //     .title {
+  //       background: rgba(0,0,0,0.7);
+  //       color: #fff;
+  //       display: flex;
+  //       align-items: center;
+  //       justify-content: center;
+  //       opacity: 0;
+  //       h3 {
+  //         font-size: 1.3rem;
+  //         text-transform: uppercase;
+  //       }
+  //     }
+  //   }
+  // }
 }
 
 @include phone {

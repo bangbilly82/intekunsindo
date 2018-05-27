@@ -10,6 +10,7 @@ import BlogPage from './pages/blog/blogPage';
 import BengkelInovasiPage from './pages/bengkelinovasi/bengkelinovasi';
 import BisnisInkubasi from './pages/bisnisinkubasi/bisnisinkubasi';
 import TenantPage from './pages/tenant/tenantPage';
+import GalleryPage from './pages/gallery/galleryPage';
 import BlogDetailPage from './pages/blogdetail/blogDetailPage';
 import ContactPage from './pages/contact/ContactPage';
 
@@ -25,6 +26,7 @@ class Routes extends Component {
         <Route path="/bengkel-inovasi" component={BengkelInovasiPage}/>
         <Route path="/inkubasi-bisnis" component={BisnisInkubasi}/>
         <Route path="/tenant/:slug" component={TenantPage}/>
+        <Route path="/gallery/:slug" component={GalleryPage}/>
         <Route path="/article/detail/:slug" component={BlogDetailPage}/>
         <Route path="/contact-us" component={ContactPage}/>
         <Footer />

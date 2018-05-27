@@ -6,6 +6,24 @@ import './Gallery.css';
 
 export default class Gallery extends Component {
 
+  generateGallery() {
+    const { content } = this.props;
+    let gallery;
+    if (content) {
+      gallery = content.map((ten, index) => {
+        return (
+          <a href={"/gallery/" + ten.fields.slug} className="item" key={index}>
+            { (ten.fields.featuredImage !== undefined) ? <img src={ten.fields.featuredImage.fields.file.url} width="100%"/> : <img src={Image1}/> }
+            <div className="title">
+              <h3>{ten.fields.tenantName}</h3>
+            </div>
+          </a>
+        );
+      })
+      return gallery;
+    }
+  }
+
   render() {
     return ( 
       <div className="gallery__wrapper container-fluid">
@@ -13,24 +31,7 @@ export default class Gallery extends Component {
           <div className="col-md-12">
             <h1>Gallery</h1>
             <div className="gallery-container">
-              <div className="item">
-                <img src={Image1}/>
-                <div className="title">
-                  <h3>Lorem Ipsum</h3>
-                </div>
-              </div>
-              <div className="item">
-                <img src={Image2}/>
-                <div className="title">
-                  <h3>Lorem Ipsum</h3>
-                </div>
-              </div>
-              <div className="item">
-                <img src={Image3}/>
-                <div className="title">
-                  <h3>Lorem Ipsum</h3>
-                </div>
-              </div>
+              {this.generateGallery()}
             </div>
           </div>
         </div>

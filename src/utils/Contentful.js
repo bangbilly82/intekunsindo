@@ -90,4 +90,43 @@ export default class Contentful {
     return tenant;
   }
 
+  static getGallery() {
+    const client = this.setClient();
+    const tenant = new Promise(
+      function (resolve, reject) {
+        client.getEntries({
+            content_type: 'gallery',
+            order: '-sys.createdAt',
+            'fields.category[in]': 'gallery'
+          })
+          .then((entries) => {
+            resolve(entries.items);
+          }, (err) => {
+            var reason = new Error('Error getting data!');
+            reject(reason);
+          });
+      }
+    );
+    return tenant;
+  }
+
+  static getGalleryDetailBySlug(slug) {
+    const client = this.setClient();
+    const tenant = new Promise(
+      function (resolve, reject) {
+        client.getEntries({
+          content_type: 'gallery',
+          'fields.slug[in]': slug
+        })
+          .then((entries) => {
+            resolve(entries);
+          }, (err) => {
+            var reason = new Error('Error getting data!');
+            reject(reason);
+          });
+      }
+    );
+    return tenant;
+  }
+
 }

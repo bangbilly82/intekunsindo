@@ -19,6 +19,9 @@ const mapDispatchToProps = (dispatch) => {
   return {
     getWorksContent: (res) => {
       dispatch(actionCreators.getWorksContent(res));
+    },
+    getWorksGallery: (res) => {
+      dispatch(actionCreators.getWorksGallery(res));
     }
   }
 }
@@ -42,6 +45,10 @@ class BisnisInkubasiPage extends Component {
       }, (err) => {
         console.log(err)
       })
+    Contentful.getGallery()
+      .then((res) => {
+        this.props.getWorksGallery(res);
+      })
   }
 
   generateWorks() {
@@ -53,13 +60,22 @@ class BisnisInkubasiPage extends Component {
     }
   }
 
+  generateGallery() {
+    const { works } = this.props;
+    if (works.gallery !== null) {
+      return (
+        <Gallery content={works.gallery}/>
+      )
+    }
+  }
+
   render() {
     return ( 
       <div className="bisnis-intek__wrapper">
         <Headline />
         <Program />
         {this.generateWorks()}
-        <Gallery />
+        {this.generateGallery()}
         <Loader loading={this.state.loading}/>
       </div>
     );

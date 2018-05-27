@@ -27,3 +27,17 @@ export function getWorksDetail(work) {
     work
   }
 }
+
+export function getWorksGallery(gallery) {
+  return {
+    type: Actions.GET_WORKS_GALLERY,
+    gallery
+  }
+}
+
+export function getGalleryDetail(gall) {
+  return {
+    type: Actions.SET_GALLERY_DETAIL,
+    gall
+  }
+}
