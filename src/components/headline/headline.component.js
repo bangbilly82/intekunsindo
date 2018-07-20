@@ -11,9 +11,11 @@ export default class Headline extends Component {
           <div className="col-md-12">
             <div className="headline-text">
               <h1>{Translate('headline-heading')}</h1>
-              <p>
-                {Translate('headline-text')}
-              </p>
+              <div className="description">
+                <p>
+                  {Translate('headline-text')}
+                </p>
+              </div>
             </div>
           </div>
         </div>

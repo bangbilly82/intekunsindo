@@ -6,6 +6,7 @@ export default class Headline extends Component {
   render() {
     return ( 
       <div className="bisnisinkubasiheadline__wrapper container">
+        <div className="overlay"></div>
         <div className="row">
           <div className="col-md-12">
             <div className="headline-text">

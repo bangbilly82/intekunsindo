@@ -3,21 +3,26 @@
 .headline__wrapper {
   background-image: url('../../static/images/homepage-image.jpg');
   background-size: cover;
-  padding: 9rem 5rem;
+  padding: 9rem 0;
   display: flex;
   justify-content: flex-end;
   .headline-text {
-    width: 400px;
+    width: 600px;
     color: #fff;
     text-align: right;
     h1 {
       margin: 0;
-      border-bottom: 1px solid #fff;
       margin-bottom: 2rem;
+      padding-right: 5rem;
     }
-    p {
-      margin: 0;
-      font-size: 0.9rem;
+    .description {
+      background: rgba(51, 149, 182, 0.8);
+      padding: 2rem 5rem;
+      p {
+        margin: 0;
+        font-size: 1rem;
+        line-height: 1.6;
+      }
     }
   }
 }
@@ -29,7 +34,7 @@
     padding: 0;
     justify-content: flex-end;
     .headline-text {
-      padding: 6.5rem 2rem;
+      padding: 6rem 0 0;
       background: rgba(0,0,0,0.5);
       width: 100%;
       color: #fff;
@@ -37,12 +42,19 @@
       h1 {
         margin: 0;
         padding-bottom: 2rem;
-        border-bottom: 1px solid #fff;
-        margin-bottom: 2rem;
+        margin-bottom: 0;
+        text-align: center;
+        padding-right: 0;
+        font-size: 1.5rem;
       }
-      p {
-        margin: 0;
-        font-size: 1.1rem;
+      .description {
+        text-align: left;
+        background: rgba(51, 149, 182, 0.8);
+        padding: 2rem;
+        p {
+          margin: 0;
+          font-size: 1.1rem;
+        }
       }
     }
   }

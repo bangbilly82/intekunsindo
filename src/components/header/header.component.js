@@ -40,7 +40,7 @@ export default class Header extends Component {
             <div className="header__wrapper hidden-xs">
               <div className="menu-wrapper">
                 <div className="logo">
-                  <a href="/"><h1><img src={Logo} width="60px"/></h1></a>
+                  <a href="/"><h1><img src={Logo} width="60px"/><span>Intek Unsindo</span></h1></a>
                 </div>
                 <div className="links">
                   {this.generateMenu()}

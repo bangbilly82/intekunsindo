@@ -20,6 +20,10 @@
         margin: 0;
         font-size: 1.5rem;
         font-weight: 700; }
+        .header__wrapper .menu-wrapper .logo a h1 span {
+          font-size: 1.1rem;
+          margin-left: 12px;
+          color: #417E92; }
     .header__wrapper .menu-wrapper .links {
       display: flex;
       align-items: center; }
@@ -55,7 +59,9 @@
     justify-content: space-between; }
     .header-mobile__wrapper .menu-wrapper .logo .header h3 {
       font-size: 1.2rem;
-      margin: 0; }
+      margin: 0;
+      color: #417E92;
+      font-weight: 700; }
     .header-mobile__wrapper .menu-wrapper .logo .mobile-menu__trigger i {
       font-size: 1.5rem; }
       .header-mobile__wrapper .menu-wrapper .logo .mobile-menu__trigger i:hover {

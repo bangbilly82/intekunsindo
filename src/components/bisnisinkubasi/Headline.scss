@@ -5,6 +5,16 @@
   background-size: cover;
   padding: 9rem 0 3rem 0;
   display: flex;
+  position: relative;
+  .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0,0,0,0.5);
+    z-index: 0;
+  }
   .headline-text {
     width: 500px;
     color: #fff;
